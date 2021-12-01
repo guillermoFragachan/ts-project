@@ -1,6 +1,11 @@
 interface Song {
-  album: object;
-  artist: object;
+  album: {
+    cover: string,
+    title: string
+  };
+  artist: {
+    name: string
+  };
   duration: number;
   explicit_content_cover: number;
   explicit_content_lyrics: number;
