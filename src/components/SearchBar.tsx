@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, FormControl, Container, Row, Col, FormGroup } from "react-bootstrap";
+import { Form, FormControl, Container, Row, Col, FormGroup, ListGroup } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import SongList from "./SongList";
 import Song from '../interfaces/song'
@@ -55,10 +55,12 @@ function SearchBar() {
         <Container>
         <Row className="mt-5 d=flex ">
           <Col sm={3}>
+              <ListGroup>
           {   data &&
                 data.map((song)=>{return <SongList song={song}/>
                 })
-            }               
+            }
+            </ListGroup>               
 
           </Col>
         </Row>

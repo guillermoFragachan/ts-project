@@ -3,7 +3,7 @@ import {  Container,  Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import Song from '../interfaces/song'
 import { useNavigate } from "react-router";
-
+import ListGroup from 'react-bootstrap/ListGroup'
 
 
 interface SongProps{
@@ -19,10 +19,10 @@ const navigate = useNavigate()
   }, []);
 
   return (
-    <div onClick={()=>navigate(`/${song.id}`)} >
+    <ListGroup.Item onClick={()=>navigate(`/${song.id}`)} >
               {song.title}
 
-    </div>
+    </ListGroup.Item>
   );
 }
 

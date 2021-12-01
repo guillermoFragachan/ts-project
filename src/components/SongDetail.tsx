@@ -54,15 +54,12 @@ function SongDetail() {
                 </Card.Text>
               </Card.Body>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>{data.duration}</ListGroupItem>
+                <ListGroupItem>Duration: {data.duration}</ListGroupItem>
                 <ListGroupItem>Album: {data.album.title}</ListGroupItem>
                 <ListGroupItem>Link:  
                     <a href={data.link}>{data.link}</a></ListGroupItem>
               </ListGroup>
-              <Card.Body>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
-              </Card.Body>
+              
             </Card>
           }           
 
